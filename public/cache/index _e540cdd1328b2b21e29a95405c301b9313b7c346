@@ -1,0 +1,8 @@
+
+<?php echo static::e(include('views/_components/head.php')); ?>
+
+<?php echo static::e(include('views/_components/nav.php')); ?>
+
+<?php echo static::e(include('views/mapping.php')); ?>
+
+<?php echo static::e(include('views/_components/footer.php')); ?>

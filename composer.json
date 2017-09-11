@@ -1,0 +1,25 @@
+{
+    "name": "kingjohnny/boomy",
+    "description": "Uw groothandel in hoogwaardige kauw- en beloningsartikelen",
+    "type": "project",
+    "require": {
+        "skip": "skip",
+        "composer/composer": "composer/composer",
+        
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kingjohnny",
+            "email": "johnny@thinktomorrow.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "scripts": {
+        "post-create-project-cmd": [
+            "yarn install",
+            "echo 'goe bezig'"
+        ]
+    }
+}

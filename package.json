@@ -1,0 +1,32 @@
+{
+  "name": "Boomy",
+  "version": "0.0.1",
+  "description": "quickstart your frontend",
+  "type": "project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingjohnny/boomy.git"
+  },
+  "author": "kingjohnny <johnny@thinktomorrow.be>",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "warpaint": "^0.0.8",
+    "laravel-mix": "^0.8.0",
+    "vue": "^2.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kingjohnny/boomy/issues"
+  },
+  "homepage": "https://github.com/kingjohnny/boomy#readme",
+  "scripts": {
+    "dev": "./node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [
+    "boilerplate"
+  ]
+}

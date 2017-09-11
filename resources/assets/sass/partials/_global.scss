@@ -1,0 +1,77 @@
+.dog-bowl{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.bg-yellow {
+    background: url(../img/bg-pattern.png) $yellow no-repeat top left;
+    position: relative;
+    overflow: hidden;
+}
+//HOMEPAGE BOTTOM GRID
+.bg-brown{
+    background-color: $dark-brown;
+    color: $white;
+    padding: 25px;
+}
+.bg-white{
+    background-color: $white;
+    color: $dark-brown;
+    padding: 25px;
+}
+.bg-quote{
+    height: 500px;
+    background: url(../img/bg-quote.png) $dark-brown no-repeat top left;
+    background-size: cover;
+    & h1{
+        font-size: 12px;
+        font-family: "Lato";
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2.6;
+        }
+    & .line{
+        background-color: $white;
+        width: 22px;
+        height: 1px;
+        margin: 0 auto;
+        display: block;
+        }
+    & h2{
+        font-size: 21px;
+        font-family: "Aileron";
+        color: $white;
+        font-weight: bold;
+        line-height: 1.524;
+        text-align: center;
+        padding-top: 25px;
+        }
+    & p{
+        font-size: 16px;
+        font-family: "Playfair Display";
+        color: $light-brown;
+        line-height: 1.375;
+        text-align: center;
+        padding-top: 25px;
+        }
+}
+section.bg-brown{
+    margin: 75px auto;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.bg-green{
+    background: url(../img/bg-pattern-repeat.png) $green repeat top left;
+    color: $white;
+    padding: 25px;
+}
+
+.dog-lifestyle{
+  background: url(../img/dog-lifestyle.png) $dark-brown no-repeat top left;
+  color: $white;
+  padding: 100px 150px;
+  background-size: 50%;
+}

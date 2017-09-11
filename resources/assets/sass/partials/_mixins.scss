@@ -1,0 +1,18 @@
+//BUTTONS
+@mixin btn-style($btn-color){
+    color: $btn-color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $btn-color;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: $btn-color;
+            color: $white;
+        }
+        &:active{
+            background-color: $btn-color;
+            color: $white;
+        }
+    }

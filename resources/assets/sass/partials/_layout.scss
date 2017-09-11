@@ -1,0 +1,207 @@
+.relative{
+  position: relative;
+}
+.nav{
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+    .icon{
+      max-width: 50px;
+      float: left;
+      height: 45px;
+    }
+    & .logo{
+        position: absolute;
+        top: 0;
+    }
+    & .menu-top{
+        position: absolute;
+        right: 0;
+        top: 0px;
+        & li{
+            border: 1px solid $medium-grey;
+            border-top: none;
+            font-size: 14px;
+            font-family: "Avenir-Roman";
+            padding-bottom: 0;
+            &:first-child{
+              border-right: none;
+              padding-right: 15px;
+            }
+            & a,i{
+                color: $medium-grey;
+                vertical-align: text-top;
+                padding: 0.3rem 1rem;
+                white-space: nowrap;
+            }
+        }
+        .icon-small{
+          max-width: 20px;
+        }
+    }
+    .main-menu{
+      margin-top: 50px;
+    & h1{
+      font-size: 21px;
+      font-family: "Avenir-Roman";
+      font-weight: bolder;
+      color: rgb(70, 63, 56);
+      text-transform: uppercase;
+    margin: 0;
+    }
+        & span{
+          font-size: 16px;
+          font-family: "Avenir-Roman";
+          color: rgb(211, 203, 197);
+          text-transform: uppercase;
+        }
+}
+li{
+  padding-bottom: 1rem;
+}
+}
+
+.intro{
+    padding: 150px 0px;
+    & h1{
+        color: $white;
+    }
+    & h2{
+        color: $dark-brown;
+    }
+    & p{
+        color: $dark-brown;
+    }
+
+}
+.intro-product{
+    padding: 75px 0px;
+    position: relative;
+    & h1{
+        color: $white;
+    }
+    & h2{
+        color: rgba($black, 0.4);
+    }
+    .dog{
+      position: absolute;
+      bottom: 0;
+      left: 60%;
+    }
+
+}
+
+.catalogus{
+    background: url(../img/bg-catalogus.png) no-repeat left bottom;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    .booklet{
+       margin-top: 100px;
+    }
+}
+a{
+.circle-button {
+  transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: $pommegrate;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 286px;
+    height: 286px;
+    padding-top: 50px;
+    & h1{
+        margin-top: 15px;
+        color: $white;
+        line-height: 0.8;
+    }
+    & p{
+  font-size: 21px;
+  font-family: "Aileron";
+  color: rgba($black,0.5);
+  line-height: 1.1;
+    }
+}
+&:hover{
+  >.circle-button{
+    background-color: darken($pommegrate, 10%);
+
+  }
+}
+}
+.in-de-kijker{
+    padding: 75px 0px;
+
+    & img{
+        margin: 0 auto;
+        display: block;
+    }
+    & h1,p{
+        color: $dark-brown;
+    }
+    & h2 {
+      @extend h4;
+        color: $light-brown;
+    }
+}
+
+.no-gutter .home-grid{
+    padding: 0px;
+}
+.home-grid{
+    overflow: hidden;
+    position: relative;
+    & .bg-img{
+      max-width: initial!important;
+      height: 100%;
+      position: absolute;
+    }
+    & .icon{
+      max-width: 35px;
+      margin: 15px 0;
+    }
+    & .grid-content{
+        padding: 25px;
+    }
+
+}
+
+footer{
+    padding: 50px 0;
+    position: relative;
+    & h1{
+        font-size: 16px;
+        font-family: "Avenir";
+        color: $dark-brown;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+
+    & li{
+        font-family: "Avenir";
+        list-style-type: none;
+        font-size: 14px;
+        color: $light-brown;
+        line-height: 3;
+        font-weight: bold;
+    }
+
+    & .border-left{
+        border-left: 1px solid #eeeeee;
+        min-height:450px;
+    }
+
+    & span{
+        font-family: "Avenir";
+        font-size: 14px;
+        color: $light-brown;
+        position: absolute;
+        bottom: 50px;
+    }
+}
