@@ -37,11 +37,10 @@
 	<!-- head scripts -->
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-
 </head>
 <body>
-    {{ include('views/_layouts/_components/nav.php') }}
-    {{ yield('content') }}
-    {{ include('views/_layouts/_components/footer.php') }}
+    {{ include('views/_layouts/_components/nav.blade.php') }}
+    {{ include('views/mapping.php') }}
+    {{ include('views/_layouts/_components/footer.blade.php') }}
 </body>
 </html>

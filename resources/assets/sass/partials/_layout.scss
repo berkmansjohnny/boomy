@@ -1,5 +1,5 @@
 .relative{
-  position: relative;
+    position: relative;
 }
 .nav{
     background-color: #FFF;
@@ -8,60 +8,42 @@
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
     position: relative;
     z-index: 10;
+    .logo{
+        position: absolute;
+    }
     .icon{
-      max-width: 50px;
-      float: left;
-      height: 45px;
-    }
-    & .logo{
-        position: absolute;
-        top: 0;
-    }
-    & .menu-top{
-        position: absolute;
-        right: 0;
-        top: 0px;
-        & li{
-            border: 1px solid $medium-grey;
-            border-top: none;
-            font-size: 14px;
-            font-family: "Avenir-Roman";
-            padding-bottom: 0;
-            &:first-child{
-              border-right: none;
-              padding-right: 15px;
-            }
-            & a,i{
-                color: $medium-grey;
-                vertical-align: text-top;
-                padding: 0.3rem 1rem;
-                white-space: nowrap;
-            }
-        }
-        .icon-small{
-          max-width: 20px;
-        }
+        max-width: 50px;
+        float: left;
+        height: 45px;
     }
     .main-menu{
-      margin-top: 50px;
-    & h1{
-      font-size: 21px;
-      font-family: "Avenir-Roman";
-      font-weight: bolder;
-      color: rgb(70, 63, 56);
-      text-transform: uppercase;
-    margin: 0;
-    }
-        & span{
-          font-size: 16px;
-          font-family: "Avenir-Roman";
-          color: rgb(211, 203, 197);
-          text-transform: uppercase;
+        & h1{
+            font-size: 21px;
+            font-family: "Avenir-Roman";
+            font-weight: bolder;
+            color: rgb(70, 63, 56);
+            text-transform: uppercase;
+            margin: 0;
         }
-}
-li{
-  padding-bottom: 1rem;
-}
+        & span{
+            font-size: 16px;
+            font-family: "Avenir-Roman";
+            color: rgb(211, 203, 197);
+            text-transform: uppercase;
+        }
+    }
+    ul{
+        margin-top: 50px;
+        padding-left: 0;
+
+    li{
+        float: left;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+    }
 }
 
 .intro{
@@ -87,9 +69,9 @@ li{
         color: rgba($black, 0.4);
     }
     .dog{
-      position: absolute;
-      bottom: 0;
-      left: 60%;
+        position: absolute;
+        bottom: 0;
+        left: 60%;
     }
 
 }
@@ -101,38 +83,38 @@ li{
     overflow: hidden;
     position: relative;
     .booklet{
-       margin-top: 100px;
+        margin-top: 100px;
     }
 }
 a{
-.circle-button {
-  transition: all 0.3s ease-in-out;
-    border-radius: 50%;
-    background-color: $pommegrate;
-    position: absolute;
-    top: 100px;
-    left: 25%;
-    width: 286px;
-    height: 286px;
-    padding-top: 50px;
-    & h1{
-        margin-top: 15px;
-        color: $white;
-        line-height: 0.8;
+    .circle-button {
+        transition: all 0.3s ease-in-out;
+        border-radius: 50%;
+        background-color: $pommegrate;
+        position: absolute;
+        top: 100px;
+        left: 25%;
+        width: 286px;
+        height: 286px;
+        padding-top: 50px;
+        & h1{
+            margin-top: 15px;
+            color: $white;
+            line-height: 0.8;
+        }
+        & p{
+            font-size: 21px;
+            font-family: "Aileron";
+            color: rgba($black,0.5);
+            line-height: 1.1;
+        }
     }
-    & p{
-  font-size: 21px;
-  font-family: "Aileron";
-  color: rgba($black,0.5);
-  line-height: 1.1;
-    }
-}
-&:hover{
-  >.circle-button{
-    background-color: darken($pommegrate, 10%);
+    &:hover{
+        >.circle-button{
+            background-color: darken($pommegrate, 10%);
 
-  }
-}
+        }
+    }
 }
 .in-de-kijker{
     padding: 75px 0px;
@@ -145,7 +127,7 @@ a{
         color: $dark-brown;
     }
     & h2 {
-      @extend h4;
+        @extend h4;
         color: $light-brown;
     }
 }
@@ -157,13 +139,13 @@ a{
     overflow: hidden;
     position: relative;
     & .bg-img{
-      max-width: initial!important;
-      height: 100%;
-      position: absolute;
+        max-width: initial!important;
+        height: 100%;
+        position: absolute;
     }
     & .icon{
-      max-width: 35px;
-      margin: 15px 0;
+        max-width: 35px;
+        margin: 15px 0;
     }
     & .grid-content{
         padding: 25px;
@@ -204,4 +186,32 @@ footer{
         position: absolute;
         bottom: 50px;
     }
+}
+
+.menu-top{
+   position: absolute;
+   right: 0;
+   top: 0px;
+   ul{
+       margin:0;
+   }
+   li{
+       border: 1px solid $color-grey;
+       border-top: none;
+       font-size: 14px;
+       font-family: "Avenir-Roman";
+       padding-bottom: 0;
+       &:first-child{
+           border-right: none;
+           padding-right: 15px;
+       }
+       & a,i{
+           color: $color-grey;
+           vertical-align: text-top;
+           white-space: nowrap;
+       }
+   }
+   .icon-small{
+       max-width: 20px;
+   }
 }

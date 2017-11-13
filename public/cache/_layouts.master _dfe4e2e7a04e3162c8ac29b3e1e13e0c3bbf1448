@@ -37,14 +37,13 @@
 	<!-- head scripts -->
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-
 </head>
 <body>
-    <?php echo static::e(include('views/_layouts/_components/nav.php')); ?>
+    <?php echo static::e(include('views/_layouts/_components/nav.blade.php')); ?>
 
-    <?php echo static::e(yield('content')); ?>
+    <?php echo static::e(include('views/mapping.php')); ?>
 
-    <?php echo static::e(include('views/_layouts/_components/footer.php')); ?>
+    <?php echo static::e(include('views/_layouts/_components/footer.blade.php')); ?>
 
 </body>
 </html>

@@ -3676,49 +3676,14 @@ section.bg-brown {
   z-index: 10;
 }
 
+.nav .logo {
+  position: absolute;
+}
+
 .nav .icon {
   max-width: 50px;
   float: left;
   height: 45px;
-}
-
-.nav .logo {
-  position: absolute;
-  top: 0;
-}
-
-.nav .menu-top {
-  position: absolute;
-  right: 0;
-  top: 0px;
-}
-
-.nav .menu-top li {
-  border: 1px solid #838383;
-  border-top: none;
-  font-size: 14px;
-  font-family: "Avenir-Roman";
-  padding-bottom: 0;
-}
-
-.nav .menu-top li:first-child {
-  border-right: none;
-  padding-right: 15px;
-}
-
-.nav .menu-top li a, .nav .menu-top li i {
-  color: #838383;
-  vertical-align: text-top;
-  padding: 0.3rem 1rem;
-  white-space: nowrap;
-}
-
-.nav .menu-top .icon-small {
-  max-width: 20px;
-}
-
-.nav .main-menu {
-  margin-top: 50px;
 }
 
 .nav .main-menu h1 {
@@ -3737,8 +3702,18 @@ section.bg-brown {
   text-transform: uppercase;
 }
 
-.nav li {
-  padding-bottom: 1rem;
+.nav ul {
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.nav ul li {
+  float: left;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
 }
 
 .intro {
@@ -3893,6 +3868,39 @@ footer span {
   color: #9d9483;
   position: absolute;
   bottom: 50px;
+}
+
+.menu-top {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.menu-top ul {
+  margin: 0;
+}
+
+.menu-top li {
+  border: 1px solid #838383;
+  border-top: none;
+  font-size: 14px;
+  font-family: "Avenir-Roman";
+  padding-bottom: 0;
+}
+
+.menu-top li:first-child {
+  border-right: none;
+  padding-right: 15px;
+}
+
+.menu-top li a, .menu-top li i {
+  color: #838383;
+  vertical-align: text-top;
+  white-space: nowrap;
+}
+
+.menu-top .icon-small {
+  max-width: 20px;
 }
 
 .products {
