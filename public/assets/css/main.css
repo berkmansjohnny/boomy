@@ -1,4 +1,44 @@
+/*BASE*/
+/* FONT AWESOME
+ * -------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*PLAYFAIR DISPLAY - GOOGLE WEBFONT
+ * -------------------------- */
+/* AILERON (BOLD+BLACK FONT)
+ * -------------------------- */
+@font-face {
+  font-family: 'aileronbold';
+  src: url("../fonts/aileron/aileron-bold.eot");
+  src: url("../fonts/aileron/aileron-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/aileron/aileron-bold.woff2") format("woff2"), url("../fonts/aileron/aileron-bold.woff") format("woff"), url("../fonts/aileron/aileron-bold.ttf") format("truetype"), url("../fonts/aileron/aileron-bold.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileronblack';
+  src: url("../fonts/aileron/aileron-black.eot");
+  src: url("../fonts/aileron/aileron-black.eot?#iefix") format("embedded-opentype"), url("../fonts/aileron/aileron-black.woff") format("woff"), url("../fonts/aileron/aileron-black.ttf") format("truetype"), url("../fonts/aileron/aileron-black.svg#aileronbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* AVENIR ROMAN (TXT FONT)
+ * -------------------------- */
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url("../fonts/avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Roman.woff") format("woff"), url("../fonts/avenir/Avenir-Roman.ttf") format("truetype"), url("../fonts/avenir/Avenir-Roman.svg#Avenir-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-size: 40px;
   font-family: "Aileron";
@@ -23,11 +63,354 @@ p {
   line-height: 1.5;
 }
 
+/*PARTIALS*/
+.dog-bowl {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.bg-yellow {
+  background: url(../img/bg-pattern.png) #f3b200 no-repeat top left;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-brown {
+  background-color: #463f38;
+  color: #FFF;
+  padding: 25px;
+}
+
+.bg-white {
+  background-color: #FFF;
+  color: #463f38;
+  padding: 25px;
+}
+
+.bg-quote {
+  height: 500px;
+  background: url(../img/bg-quote.png) #463f38 no-repeat top left;
+  background-size: cover;
+}
+
+.bg-quote h1 {
+  font-size: 12px;
+  font-family: "Lato";
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.6;
+}
+
+.bg-quote .line {
+  background-color: #FFF;
+  width: 22px;
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+}
+
+.bg-quote h2 {
+  font-size: 21px;
+  font-family: "Aileron";
+  color: #FFF;
+  font-weight: bold;
+  line-height: 1.524;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.bg-quote p {
+  font-size: 16px;
+  font-family: "Playfair Display";
+  color: #9d9483;
+  line-height: 1.375;
+  text-align: center;
+  padding-top: 25px;
+}
+
+section.bg-brown {
+  margin: 75px auto;
+  height: 350px;
+  padding-top: 50px;
+}
+
+.bg-green {
+  background: url(../img/bg-pattern-repeat.png) #43a854 repeat top left;
+  color: #FFF;
+  padding: 25px;
+}
+
+.dog-lifestyle {
+  background: url(../img/dog-lifestyle.png) #463f38 no-repeat top left;
+  color: #FFF;
+  padding: 100px 150px;
+  background-size: 50%;
+}
+
+.nav {
+  background-color: #FFF;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.nav .logo {
+  position: absolute;
+}
+
+.nav .icon {
+  max-width: 50px;
+  float: left;
+  height: 45px;
+}
+
+.nav .main-menu h1 {
+  font-size: 21px;
+  font-family: "Avenir-Roman";
+  font-weight: bolder;
+  color: #463f38;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.nav .main-menu span {
+  font-size: 16px;
+  font-family: "Avenir-Roman";
+  color: #d3cbc5;
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.intro {
+  padding: 150px 0px;
+}
+
+.intro h1 {
+  color: #FFF;
+}
+
+.intro h2 {
+  color: #463f38;
+}
+
+.intro p {
+  color: #463f38;
+}
+
+.intro-product {
+  padding: 75px 0px;
+  position: relative;
+}
+
+.intro-product h1 {
+  color: #FFF;
+}
+
+.intro-product h2 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.intro-product .dog {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+}
+
+.catalogus {
+  background: url(../img/bg-catalogus.png) no-repeat left bottom;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.catalogus .booklet {
+  margin-top: 100px;
+}
+
+a .circle-button {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  background-color: #f36f51;
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  width: 286px;
+  height: 286px;
+  padding-top: 50px;
+}
+
+a .circle-button h1 {
+  margin-top: 15px;
+  color: #FFF;
+  line-height: 0.8;
+}
+
+a .circle-button p {
+  font-size: 21px;
+  font-family: "Aileron";
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.1;
+}
+
+a:hover > .circle-button {
+  background-color: #f04821;
+}
+
+.in-de-kijker {
+  padding: 75px 0px;
+}
+
+.in-de-kijker img {
+  margin: 0 auto;
+  display: block;
+}
+
+.in-de-kijker h1, .in-de-kijker p {
+  color: #463f38;
+}
+
+.in-de-kijker h2 {
+  color: #9d9483;
+}
+
+.no-gutter .home-grid {
+  padding: 0px;
+}
+
+.home-grid {
+  overflow: hidden;
+  position: relative;
+}
+
+.home-grid .bg-img {
+  max-width: initial !important;
+  height: 100%;
+  position: absolute;
+}
+
+.home-grid .icon {
+  max-width: 35px;
+  margin: 15px 0;
+}
+
+.home-grid .grid-content {
+  padding: 25px;
+}
+
+footer {
+  padding: 50px 0;
+  position: relative;
+}
+
+footer h1 {
+  font-size: 16px;
+  font-family: "Avenir";
+  color: #463f38;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+footer li {
+  font-family: "Avenir";
+  list-style-type: none;
+  font-size: 14px;
+  color: #9d9483;
+  line-height: 3;
+  font-weight: bold;
+}
+
+footer .border-left {
+  border-left: 1px solid #eeeeee;
+  min-height: 450px;
+}
+
+footer span {
+  font-family: "Avenir";
+  font-size: 14px;
+  color: #9d9483;
+  position: absolute;
+  bottom: 50px;
+}
+
+.menu-top {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.menu-top ul {
+  margin: 0;
+}
+
+.menu-top li {
+  border: 1px solid #838383;
+  border-top: none;
+  font-size: 14px;
+  font-family: "Avenir-Roman";
+  padding-bottom: 0;
+}
+
+.menu-top li:first-child {
+  border-right: none;
+  padding-right: 15px;
+}
+
+.menu-top li a, .menu-top li i {
+  color: #838383;
+  vertical-align: text-top;
+  white-space: nowrap;
+}
+
+.menu-top .icon-small {
+  max-width: 20px;
+}
+
+.products {
+  background: url(../img/bg-pattern-repeat.png) #ece8e5 repeat top left;
+  padding: 25px;
+}
+
+figure {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+figure .box {
+  box-shadow: 0 0 10px #ccc;
+}
+
+figure img {
+  min-height: 200px;
+}
+
+figure figcaption {
+  background: #FFF;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .btn {
   margin: 15px 0px;
   padding: 15px 25px;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .btn-yellow {
@@ -76,46 +459,7 @@ p {
   color: #FFF;
 }
 
-/* FONT AWESOME
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.5.0");
-  src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*PLAYFAIR DISPLAY - GOOGLE WEBFONT
- * -------------------------- */
-/* AILERON (BOLD+BLACK FONT)
- * -------------------------- */
-@font-face {
-  font-family: 'aileronbold';
-  src: url("../fonts/aileron/aileron-bold.eot");
-  src: url("../fonts/aileron/aileron-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/aileron/aileron-bold.woff2") format("woff2"), url("../fonts/aileron/aileron-bold.woff") format("woff"), url("../fonts/aileron/aileron-bold.ttf") format("truetype"), url("../fonts/aileron/aileron-bold.svg#aileronbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'aileronblack';
-  src: url("../fonts/aileron/aileron-black.eot");
-  src: url("../fonts/aileron/aileron-black.eot?#iefix") format("embedded-opentype"), url("../fonts/aileron/aileron-black.woff") format("woff"), url("../fonts/aileron/aileron-black.ttf") format("truetype"), url("../fonts/aileron/aileron-black.svg#aileronbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* AVENIR ROMAN (TXT FONT)
- * -------------------------- */
-@font-face {
-  font-family: 'Avenir-Roman';
-  src: url("../fonts/avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Roman.woff") format("woff"), url("../fonts/avenir/Avenir-Roman.ttf") format("truetype"), url("../fonts/avenir/Avenir-Roman.svg#Avenir-Roman") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*GRID*/
+/*VENDOR*/
 /*
  | ----------------------------------------------------------------
  | Style settings
@@ -3579,362 +3923,6 @@ p:first-child {
 }
 
 /*# sourceMappingURL=warpaint.css.map */
-/*PARTIALS*/
-.dog-bowl {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.bg-yellow {
-  background: url(../img/bg-pattern.png) #f3b200 no-repeat top left;
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-brown {
-  background-color: #463f38;
-  color: #FFF;
-  padding: 25px;
-}
-
-.bg-white {
-  background-color: #FFF;
-  color: #463f38;
-  padding: 25px;
-}
-
-.bg-quote {
-  height: 500px;
-  background: url(../img/bg-quote.png) #463f38 no-repeat top left;
-  background-size: cover;
-}
-
-.bg-quote h1 {
-  font-size: 12px;
-  font-family: "Lato";
-  color: #FFF;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 2.6;
-}
-
-.bg-quote .line {
-  background-color: #FFF;
-  width: 22px;
-  height: 1px;
-  margin: 0 auto;
-  display: block;
-}
-
-.bg-quote h2 {
-  font-size: 21px;
-  font-family: "Aileron";
-  color: #FFF;
-  font-weight: bold;
-  line-height: 1.524;
-  text-align: center;
-  padding-top: 25px;
-}
-
-.bg-quote p {
-  font-size: 16px;
-  font-family: "Playfair Display";
-  color: #9d9483;
-  line-height: 1.375;
-  text-align: center;
-  padding-top: 25px;
-}
-
-section.bg-brown {
-  margin: 75px auto;
-  height: 350px;
-  padding-top: 50px;
-}
-
-.bg-green {
-  background: url(../img/bg-pattern-repeat.png) #43a854 repeat top left;
-  color: #FFF;
-  padding: 25px;
-}
-
-.dog-lifestyle {
-  background: url(../img/dog-lifestyle.png) #463f38 no-repeat top left;
-  color: #FFF;
-  padding: 100px 150px;
-  background-size: 50%;
-}
-
-.relative {
-  position: relative;
-}
-
-.nav {
-  background-color: #FFF;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 10;
-}
-
-.nav .logo {
-  position: absolute;
-}
-
-.nav .icon {
-  max-width: 50px;
-  float: left;
-  height: 45px;
-}
-
-.nav .main-menu h1 {
-  font-size: 21px;
-  font-family: "Avenir-Roman";
-  font-weight: bolder;
-  color: #463f38;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.nav .main-menu span {
-  font-size: 16px;
-  font-family: "Avenir-Roman";
-  color: #d3cbc5;
-  text-transform: uppercase;
-}
-
-.nav ul {
-  margin-top: 50px;
-  padding-left: 0;
-}
-
-.nav ul li {
-  float: left;
-  list-style: none;
-}
-
-.nav ul li a {
-  text-decoration: none;
-}
-
-.intro {
-  padding: 150px 0px;
-}
-
-.intro h1 {
-  color: #FFF;
-}
-
-.intro h2 {
-  color: #463f38;
-}
-
-.intro p {
-  color: #463f38;
-}
-
-.intro-product {
-  padding: 75px 0px;
-  position: relative;
-}
-
-.intro-product h1 {
-  color: #FFF;
-}
-
-.intro-product h2 {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.intro-product .dog {
-  position: absolute;
-  bottom: 0;
-  left: 60%;
-}
-
-.catalogus {
-  background: url(../img/bg-catalogus.png) no-repeat left bottom;
-  background-size: cover;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
-.catalogus .booklet {
-  margin-top: 100px;
-}
-
-a .circle-button {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
-  background-color: #f36f51;
-  position: absolute;
-  top: 100px;
-  left: 25%;
-  width: 286px;
-  height: 286px;
-  padding-top: 50px;
-}
-
-a .circle-button h1 {
-  margin-top: 15px;
-  color: #FFF;
-  line-height: 0.8;
-}
-
-a .circle-button p {
-  font-size: 21px;
-  font-family: "Aileron";
-  color: rgba(0, 0, 0, 0.5);
-  line-height: 1.1;
-}
-
-a:hover > .circle-button {
-  background-color: #f04821;
-}
-
-.in-de-kijker {
-  padding: 75px 0px;
-}
-
-.in-de-kijker img {
-  margin: 0 auto;
-  display: block;
-}
-
-.in-de-kijker h1, .in-de-kijker p {
-  color: #463f38;
-}
-
-.in-de-kijker h2 {
-  color: #9d9483;
-}
-
-.no-gutter .home-grid {
-  padding: 0px;
-}
-
-.home-grid {
-  overflow: hidden;
-  position: relative;
-}
-
-.home-grid .bg-img {
-  max-width: initial !important;
-  height: 100%;
-  position: absolute;
-}
-
-.home-grid .icon {
-  max-width: 35px;
-  margin: 15px 0;
-}
-
-.home-grid .grid-content {
-  padding: 25px;
-}
-
-footer {
-  padding: 50px 0;
-  position: relative;
-}
-
-footer h1 {
-  font-size: 16px;
-  font-family: "Avenir";
-  color: #463f38;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 2;
-}
-
-footer li {
-  font-family: "Avenir";
-  list-style-type: none;
-  font-size: 14px;
-  color: #9d9483;
-  line-height: 3;
-  font-weight: bold;
-}
-
-footer .border-left {
-  border-left: 1px solid #eeeeee;
-  min-height: 450px;
-}
-
-footer span {
-  font-family: "Avenir";
-  font-size: 14px;
-  color: #9d9483;
-  position: absolute;
-  bottom: 50px;
-}
-
-.menu-top {
-  position: absolute;
-  right: 0;
-  top: 0px;
-}
-
-.menu-top ul {
-  margin: 0;
-}
-
-.menu-top li {
-  border: 1px solid #838383;
-  border-top: none;
-  font-size: 14px;
-  font-family: "Avenir-Roman";
-  padding-bottom: 0;
-}
-
-.menu-top li:first-child {
-  border-right: none;
-  padding-right: 15px;
-}
-
-.menu-top li a, .menu-top li i {
-  color: #838383;
-  vertical-align: text-top;
-  white-space: nowrap;
-}
-
-.menu-top .icon-small {
-  max-width: 20px;
-}
-
-.products {
-  background: url(../img/bg-pattern-repeat.png) #ece8e5 repeat top left;
-  padding: 25px;
-}
-
-figure {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-figure .box {
-  box-shadow: 0 0 10px #ccc;
-}
-
-figure img {
-  min-height: 200px;
-}
-
-figure figcaption {
-  background: #FFF;
-  text-align: center;
-  padding: 15px 0;
-  text-transform: uppercase;
-}
-
-figure:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-/*VENDOR*/
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.0

@@ -16,3 +16,21 @@
             color: $white;
         }
     }
+
+.btn{
+    margin: 15px 0px;
+    padding: 15px 25px;
+    cursor:pointer;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-yellow {
+	@include btn-style($white);
+    &:hover{
+        color: $yellow;
+    }
+}
+.btn-brown{
+    @include btn-style($dark-brown);
+}

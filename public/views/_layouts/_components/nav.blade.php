@@ -6,36 +6,31 @@
                     <img src="assets/img/nav/logo.png">
                 </a>
             </div>
-            <div class="column-8 center-center">
-                <ul class="row stack">
-                    <li>
-                        <a href="#" title="" class="row">
-                            <img src="assets/svg/dog.svg" class="icon">
-                            <div class="column">
-                                <h1>HONDEN</h1>
-                                <span>Alle producten</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="" class="row">
-                            <img src="assets/svg/horse.svg" class="icon">
-                            <div class="column">
-                                <h1>PAARDEN</h1>
-                                <span>beloningsartikelen</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="" class="row">
-                            <img src="assets/svg/love.svg" class="icon">
-                            <div class="column">
-                                <h1>Over ons</h1>
-                                <span>Boomy Animal Crackers</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row center-center">
+
+                <a href="#" title="" class="column">
+                    <img src="assets/svg/dog.svg" class="icon">
+                    <div class="nav-item">
+                        <h1>HONDEN</h1>
+                        <span>Alle producten</span>
+                    </div>
+                </a>
+
+                <a href="#" title="" class="column">
+                    <img src="assets/svg/horse.svg" class="icon">
+                    <div class="nav-item">
+                        <h1>PAARDEN</h1>
+                        <span>beloningsartikelen</span>
+                    </div>
+                </a>
+
+                <a href="#" title="" class="column">
+                    <img src="assets/svg/love.svg" class="icon">
+                    <div class="nav-item">
+                        <h1>Over ons</h1>
+                        <span>Boomy Animal Crackers</span>
+                    </div>
+                </a>
             </div>
             <div class="menu menu-top row">
                 <ul class="">

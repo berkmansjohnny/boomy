@@ -1,15 +1,18 @@
-@import 'partials/_mixins';
-@import 'partials/_base';
-@import 'partials/_fonts';
-
-/*GRID*/
-@import 'grid/warpaint';
+/*BASE*/
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/typography';
 
 /*PARTIALS*/
-@import 'partials/_global';
-@import 'partials/_layout';
-@import 'partials/_products';
+@import 'layout/_base';
+@import 'layout/_global';
+@import 'layout/nav';
+@import 'layout/_layout';
+@import 'layout/_products';
+
+@import 'elements/buttons';
 
 /*VENDOR*/
+@import 'vendor/warpaint';
 @import 'vendor/_animate';
 @import 'vendor/_fontawesome';
