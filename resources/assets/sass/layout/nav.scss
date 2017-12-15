@@ -29,4 +29,34 @@
             text-transform: uppercase;
         }
     }
+    .nav-item,
+    .nav-item--title{
+        float:left;
+    }
+}
+
+.nav-item--title{
+    position: relative;
+    &:after{
+        transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        background-color: white;
+        height: 0;
+        left: 0;
+        width: 0;
+    }
+    &:hover:after{
+        width: 30%;
+        height: 2px;
+    }
+}
+
+.nav-item:hover{
+    transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+    color: white;
+    background-color: black;
 }

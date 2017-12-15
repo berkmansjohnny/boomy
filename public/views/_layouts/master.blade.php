@@ -39,7 +39,7 @@
 </head>
 <body>
     {{ include('views/_layouts/_components/nav.blade.php') }}
-    {{ include('views/mapping.php') }}
+	 @yield('content')
     {{ include('views/_layouts/_components/footer.blade.php') }}
 </body>
 </html>

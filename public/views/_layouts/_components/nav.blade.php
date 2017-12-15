@@ -1,32 +1,32 @@
 <nav class="nav">
     <div class="container">
         <div class="row main-menu">
-            <div class="column">
+            <div class="column-2">
                 <a href="#" title="" class="logo">
                     <img src="assets/img/nav/logo.png">
                 </a>
             </div>
-            <div class="row center-center">
+            <div class="nav-items column">
 
-                <a href="#" title="" class="column">
+                <a href="#" title="" class="nav-item stretched">
                     <img src="assets/svg/dog.svg" class="icon">
-                    <div class="nav-item">
+                    <div class="nav-item--title">
                         <h1>HONDEN</h1>
                         <span>Alle producten</span>
                     </div>
                 </a>
 
-                <a href="#" title="" class="column">
+                <a href="#" title="" class="nav-item stretched">
                     <img src="assets/svg/horse.svg" class="icon">
-                    <div class="nav-item">
+                    <div class="nav-item--title">
                         <h1>PAARDEN</h1>
                         <span>beloningsartikelen</span>
                     </div>
                 </a>
 
-                <a href="#" title="" class="column">
+                <a href="#" title="" class="nav-item stretched">
                     <img src="assets/svg/love.svg" class="icon">
-                    <div class="nav-item">
+                    <div class="nav-item--title">
                         <h1>Over ons</h1>
                         <span>Boomy Animal Crackers</span>
                     </div>

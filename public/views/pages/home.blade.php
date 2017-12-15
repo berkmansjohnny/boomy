@@ -1,3 +1,5 @@
+@extends('layouts.master')
+@section('content')
 <!--YELLOW INTRO  -->
 <section class="intro bg-yellow">
 <div class="container">
@@ -95,3 +97,4 @@
     </div>
 </div>
 </section>
+@endsection

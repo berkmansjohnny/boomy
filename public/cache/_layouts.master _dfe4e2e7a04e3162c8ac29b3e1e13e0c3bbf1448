@@ -40,8 +40,7 @@
 <body>
     <?php echo static::e(include('views/_layouts/_components/nav.blade.php')); ?>
 
-    <?php echo static::e(include('views/mapping.php')); ?>
-
+	 <?php echo $this->yieldContent('content'); ?>
     <?php echo static::e(include('views/_layouts/_components/footer.blade.php')); ?>
 
 </body>
