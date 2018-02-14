@@ -8,7 +8,7 @@
  |
  */
     html{
-      font-size: 14px;
+      font-size: 16px;
     }
  /*
   | ----------------------------------------------------------------
@@ -54,10 +54,27 @@
 
 /*
  | ----------------------------------------------------------------
- | Smoothness
+ | Transitions
  | ----------------------------------------------------------------
  |
  | Meestal gebruikt voor hover states e.d.
  |
  */
   $transition: 0.3s ease-in-out all;
+  $bezier-transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+
+/*
+| ----------------------------------------------------------------
+| General
+| ----------------------------------------------------------------
+|
+| De browser-defaults bijsturen
+|
+*/
+  img{
+      line-height: 1; // de normalize.css geeft alle elementen een line-height van 1,5
+  }
+
+  ul{
+      padding-left: 0; // de browser heeft een -webkit-padding-left: 40px;
+  }

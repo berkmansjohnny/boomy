@@ -38,13 +38,13 @@
 .nav-item--title{
     position: relative;
     &:after{
-        transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+        transition: $bezier-transition;
         content: "";
         display: block;
         position: absolute;
         bottom: -1px;
         display: block;
-        background-color: white;
+        background-color: $color-white;
         height: 0;
         left: 0;
         width: 0;
@@ -55,7 +55,7 @@
     }
 }
 .nav-item:hover{
-    transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+    transition: $transition;
     color: $color-white;
     background-color: darken($color-white, 10%);
 }

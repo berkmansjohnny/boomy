@@ -2,16 +2,19 @@
 @import 'warpaint';
 @import 'settings';
 
-@import 'base/colors';
+@import 'base/general';
 @import 'base/fonts';
+@import 'base/typography';
 @import 'base/typography';
 
 /*PARTIALS*/
-@import 'layout/_base';
-@import 'layout/_global';
 @import 'layout/nav';
-@import 'layout/_layout';
-@import 'layout/_products';
+@import 'layout/headers';
+@import 'layout/callouts';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/products';
 
 @import 'elements/buttons';
 

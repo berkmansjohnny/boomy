@@ -2105,7 +2105,7 @@ h6:not(:last-child) {
  |
  */
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*
@@ -2143,12 +2143,28 @@ html {
  */
 /*
  | ----------------------------------------------------------------
- | Smoothness
+ | Transitions
  | ----------------------------------------------------------------
  |
  | Meestal gebruikt voor hover states e.d.
  |
  */
+/*
+| ----------------------------------------------------------------
+| General
+| ----------------------------------------------------------------
+|
+| De browser-defaults bijsturen
+|
+*/
+img {
+  line-height: 1;
+}
+
+ul {
+  padding-left: 0;
+}
+
 /* FONT AWESOME
  * -------------------------- */
 @font-face {
@@ -2189,42 +2205,29 @@ html {
 }
 
 h1 {
-  font-size: 40px;
   font-family: "Aileron";
-  color: inherit;
   font-weight: bold;
-  line-height: 1.2;
+  color: inherit;
 }
 
 h2 {
-  font-size: 30px;
   font-family: "Aileron";
-  color: inherit;
   font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
+  color: inherit;
+}
+
+body {
+  font-family: "Avenir";
 }
 
 p {
-  font-size: 16px;
   font-family: "Avenir";
   color: inherit;
-  line-height: 1.5;
 }
 
 /*PARTIALS*/
-img {
-  display: block;
-}
-
-ul {
-  padding-left: 0;
-}
-
-.dog-bowl {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.relative {
+  position: relative;
 }
 
 .bg-yellow {
@@ -2357,7 +2360,7 @@ section.bg-brown {
   position: absolute;
   bottom: -1px;
   display: block;
-  background-color: white;
+  background-color: #FFF;
   height: 0;
   left: 0;
   width: 0;
@@ -2369,8 +2372,8 @@ section.bg-brown {
 }
 
 .nav-item:hover {
-  -webkit-transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
-  transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
   color: #FFF;
   background-color: #e6e5e5;
 }
@@ -2414,10 +2417,6 @@ section.bg-brown {
   max-width: 20px;
 }
 
-.relative {
-  position: relative;
-}
-
 .intro {
   padding: 150px 0px;
 }
@@ -2451,6 +2450,12 @@ section.bg-brown {
   position: absolute;
   bottom: 0;
   left: 60%;
+}
+
+.dog-bowl {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .catalogus {
@@ -2512,10 +2517,6 @@ a:hover > .circle-button {
   color: #9d9483;
 }
 
-.no-gutter .home-grid {
-  padding: 0px;
-}
-
 .home-grid {
   overflow: hidden;
   position: relative;
@@ -2534,40 +2535,6 @@ a:hover > .circle-button {
 
 .home-grid .grid-content {
   padding: 25px;
-}
-
-footer {
-  padding: 50px 0;
-  position: relative;
-}
-
-footer h1 {
-  font-size: 16px;
-  font-family: "Aileron";
-  color: #463f38;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 2;
-}
-
-footer li {
-  font-family: "Avenir";
-  list-style-type: none;
-  color: #9d9483;
-  line-height: 1.5;
-}
-
-footer .border-left {
-  border-left: 1px solid #eeeeee;
-  min-height: 450px;
-}
-
-footer span {
-  font-family: "Avenir";
-  font-size: 14px;
-  color: #9d9483;
-  position: absolute;
-  bottom: 50px;
 }
 
 .products {
@@ -2618,6 +2585,7 @@ figure:hover {
   border-style: solid;
   border-color: #FFF;
   background-color: transparent;
+  font-family: "Avenir";
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2643,6 +2611,7 @@ figure:hover {
   border-style: solid;
   border-color: #463f38;
   background-color: transparent;
+  font-family: "Avenir";
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

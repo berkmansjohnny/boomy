@@ -1,0 +1,32 @@
+
+footer{
+    padding: 50px 0;
+    position: relative;
+    & h1{
+        font-size: 16px;
+        font-family: $font-accent;
+        color: $color-secondary;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+    & li{
+        font-family: $font-base;
+        list-style-type: none;
+        color: $light-brown;
+        line-height: 1.5;
+    }
+
+    & .border-left{
+        border-left: 1px solid #eeeeee;
+        min-height:450px;
+    }
+
+    & span{
+        font-family: $font-base;
+        font-size: 14px;
+        color: $light-brown;
+        position: absolute;
+        bottom: 50px;
+    }
+}

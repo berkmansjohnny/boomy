@@ -5,6 +5,8 @@
     border-style: solid;
     border-color: $btn-color;
     background-color: transparent;
+    font-family: $font-base;
+
     cursor: pointer;
     transition: all 0.3s ease-in-out;
         &:hover{

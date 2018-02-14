@@ -1,22 +1,17 @@
 h1{
-  font-size: 40px;
-  font-family: "Aileron";
-  color: inherit;
+  font-family: $font-accent;
   font-weight: bold;
-  line-height: 1.2;
+  color: inherit;
 }
 h2{
-  font-size: 30px;
-  font-family: "Aileron";
-  color: inherit;
+  font-family: $font-accent;
   font-weight: bold;
-  line-height: 1.2;
-  text-align: left;
+  color: inherit;
 }
-
+body{
+    font-family: $font-base;
+}
 p{
-  font-size: 16px;
   font-family: $font-base;
   color: inherit;
-  line-height: 1.5;
 }

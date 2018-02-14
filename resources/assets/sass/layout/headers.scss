@@ -1,0 +1,19 @@
+.hero{
+    color: $color-white;
+    background-image: url(../img/bg-pattern-repeat.png);
+    background-repeat: repeat;
+    background-position: top left;
+}
+.hero--dogs{
+    background-color: $success;
+}
+.hero-horses{
+    background-color: $warning;
+}
+
+.hero--content{}
+.hero--picture{
+    img{ display: block;}
+}
+
+

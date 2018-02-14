@@ -1,14 +1,14 @@
 @extends('_layouts.master')
 @section('page-content')
 
-    <header class="intro-product bg-green">
+    <header class="hero hero-dogs">
         <div class="container">
             <div class="row stack-l">
-                <div class="column-7">
+                <div class="hero--content column-7">
                     <h1 class="first">Hoogwaardige kauw- en beloningsartikelen</h1>
                     <h2>Wij weten wat jouw hond gelukkig maakt</h2>
                 </div>
-                <div class="dog">
+                <div class="hero--picture">
                     <img src="{{ asset('assets/img/dogs/bulldog.png') }}" />
                 </div>
             </div>
@@ -28,7 +28,7 @@
                             </figcaption>
                         </div>
                     </a>
-                </figure>    
+                </figure>
                 <figure class="column-3">
                     <div class="box">
                         <img src="{{ asset('assets/img/products/koekjes.png') }}" alt="Boomy animal crackers - koekjes">
