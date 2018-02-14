@@ -9,11 +9,11 @@
     transition: all 0.3s ease-in-out;
         &:hover{
             background-color: $btn-color;
-            color: $white;
+            color: $color-white;
         }
         &:active{
             background-color: $btn-color;
-            color: $white;
+            color: $color-white;
         }
     }
 
@@ -26,11 +26,11 @@
     border-radius: 5px;
 }
 .btn-yellow {
-	@include btn-style($white);
+	@include btn-style($color-white);
     &:hover{
-        color: $yellow;
+        color: $color-primary;
     }
 }
 .btn-brown{
-    @include btn-style($dark-brown);
+    @include btn-style($color-secondary);
 }

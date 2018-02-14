@@ -1,0 +1,63 @@
+/*
+ | ----------------------------------------------------------------
+ | Base settings
+ | ----------------------------------------------------------------
+ |
+ | Afhankelijk van de fonts die je kiest kan je hieronder de font-size definiëren.
+ | Zo ben je zeker van een deftige font-rendering.
+ |
+ */
+    html{
+      font-size: 14px;
+    }
+ /*
+  | ----------------------------------------------------------------
+  | Typography
+  | ----------------------------------------------------------------
+  |
+  | Met google fonts kan je twee fonts inladen.
+  | Best is dat je een serif en sans-serif font kiest.
+  |
+  */
+    $font-base:     "Avenir"; // paragraphs, text, list items
+    $font-accent:   "Aileron"; // headings
+/*
+ | ----------------------------------------------------------------
+ | Border Radius
+ | ----------------------------------------------------------------
+ |
+ | een border radius van minder dan 15px zal op ieder element mooi gerenderd worden.
+ |
+ */
+    $default-border-radius: 30px;
+
+/*
+ | ----------------------------------------------------------------
+ | Icons
+ | ----------------------------------------------------------------
+ |
+ | Icon setup.
+ |
+ */
+    $base-icon-size: 24px;
+
+/*
+ | ----------------------------------------------------------------
+ | Btn Circular buttons
+ | ----------------------------------------------------------------
+ |
+ | Icon setup.
+ |
+ */
+    $btn-border-radius: 3rem;
+    $circle-diameter: 1.5rem;
+
+/*
+ | ----------------------------------------------------------------
+ | Smoothness
+ | ----------------------------------------------------------------
+ |
+ | Meestal gebruikt voor hover states e.d.
+ |
+ */
+  $transition: 0.3s ease-in-out all;

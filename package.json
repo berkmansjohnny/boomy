@@ -1,32 +1,23 @@
 {
-  "name": "Boomy",
-  "version": "0.0.1",
-  "description": "quickstart your frontend",
-  "type": "project",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kingjohnny/boomy.git"
-  },
-  "author": "kingjohnny <johnny@thinktomorrow.be>",
-  "license": "MIT",
-  "dependencies": {
-    "animate.css": "^3.5.2",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "warpaint": "^0.0.8",
-    "laravel-mix": "^0.8.0",
-    "vue": "^2.1.0"
-  },
-  "bugs": {
-    "url": "https://github.com/kingjohnny/boomy/issues"
-  },
-  "homepage": "https://github.com/kingjohnny/boomy#readme",
-  "scripts": {
-    "dev": "./node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "./node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "keywords": [
-    "boilerplate"
-  ]
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.17",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.4",
+        "popper.js": "^1.12",
+        "vue": "^2.5.7",
+        "warpaint": "git://github.com/thinktomorrow/warpaint.git#0.1"
+    }
 }

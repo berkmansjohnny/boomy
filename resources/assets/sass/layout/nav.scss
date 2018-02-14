@@ -13,7 +13,7 @@
         float: left;
         height: 45px;
     }
-    .main-menu{
+    .menu-primary{
         & h1{
             font-size: 21px;
             font-family: "Avenir-Roman";
@@ -54,9 +54,41 @@
         height: 2px;
     }
 }
-
 .nav-item:hover{
     transition: 0.26s cubic-bezier(0.69, 0.14, 0.05, 1.31);
-    color: white;
-    background-color: black;
+    color: $color-white;
+    background-color: darken($color-white, 10%);
+}
+/*
+| ---------------------------------------------------------------
+| Secondary menu for downloads and language
+| ----------------------------------------------------------------
+*/
+.menu-secondary{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    .menu-item{
+        border: 1px solid $color-grey;
+        color: $color-grey;
+        border-top: none;
+        font-size: 14px;
+        font-family: "Avenir-Roman";
+        &:first-child{
+            border-right: none;
+        }
+        & a,i{
+            color: inherit;
+            vertical-align: text-top;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        &:hover{
+            color: $color-white;
+            background-color: $color-grey;
+        }
+    }
+    .icon-small{
+        max-width: 20px;
+    }
 }

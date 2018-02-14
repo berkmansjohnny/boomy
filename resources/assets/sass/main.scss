@@ -1,4 +1,7 @@
 /*BASE*/
+@import 'warpaint';
+@import 'settings';
+
 @import 'base/colors';
 @import 'base/fonts';
 @import 'base/typography';
@@ -13,6 +16,5 @@
 @import 'elements/buttons';
 
 /*VENDOR*/
-@import 'vendor/warpaint';
 @import 'vendor/_animate';
 @import 'vendor/_fontawesome';

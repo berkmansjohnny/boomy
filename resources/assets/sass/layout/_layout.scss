@@ -6,13 +6,13 @@
 .intro{
     padding: 150px 0px;
     & h1{
-        color: $white;
+        color: $color-white;
     }
     & h2{
-        color: $dark-brown;
+        color: $color-secondary;
     }
     & p{
-        color: $dark-brown;
+        color: $color-secondary;
     }
 
 }
@@ -20,10 +20,10 @@
     padding: 75px 0px;
     position: relative;
     & h1{
-        color: $white;
+        color: $color-white;
     }
     & h2{
-        color: rgba($black, 0.4);
+        color: rgba($color-black, 0.4);
     }
     .dog{
         position: absolute;
@@ -56,13 +56,13 @@ a{
         padding-top: 50px;
         & h1{
             margin-top: 15px;
-            color: $white;
+            color: $color-white;
             line-height: 0.8;
         }
         & p{
             font-size: 21px;
             font-family: "Aileron";
-            color: rgba($black,0.5);
+            color: rgba($color-black,0.5);
             line-height: 1.1;
         }
     }
@@ -81,7 +81,7 @@ a{
         display: block;
     }
     & h1,p{
-        color: $dark-brown;
+        color: $color-secondary;
     }
     & h2 {
         @extend h4;
@@ -115,20 +115,17 @@ footer{
     position: relative;
     & h1{
         font-size: 16px;
-        font-family: "Avenir";
-        color: $dark-brown;
+        font-family: $font-accent;
+        color: $color-secondary;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 2;
     }
-
     & li{
-        font-family: "Avenir";
+        font-family: $font-base;
         list-style-type: none;
-        font-size: 14px;
         color: $light-brown;
-        line-height: 3;
-        font-weight: bold;
+        line-height: 1.5;
     }
 
     & .border-left{
@@ -137,38 +134,10 @@ footer{
     }
 
     & span{
-        font-family: "Avenir";
+        font-family: $font-base;
         font-size: 14px;
         color: $light-brown;
         position: absolute;
         bottom: 50px;
     }
-}
-
-.menu-top{
-   position: absolute;
-   right: 0;
-   top: 0px;
-   ul{
-       margin:0;
-   }
-   li{
-       border: 1px solid $color-grey;
-       border-top: none;
-       font-size: 14px;
-       font-family: "Avenir-Roman";
-       padding-bottom: 0;
-       &:first-child{
-           border-right: none;
-           padding-right: 15px;
-       }
-       & a,i{
-           color: $color-grey;
-           vertical-align: text-top;
-           white-space: nowrap;
-       }
-   }
-   .icon-small{
-       max-width: 20px;
-   }
 }

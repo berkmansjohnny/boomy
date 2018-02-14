@@ -5,35 +5,35 @@
 }
 
 .bg-yellow {
-    background: url(../img/bg-pattern.png) $yellow no-repeat top left;
+    background: url(../img/bg-pattern.png) $color-primary no-repeat top left;
     position: relative;
     overflow: hidden;
 }
 //HOMEPAGE BOTTOM GRID
 .bg-brown{
-    background-color: $dark-brown;
-    color: $white;
+    background-color: $color-secondary;
+    color: $color-white;
     padding: 25px;
 }
 .bg-white{
-    background-color: $white;
-    color: $dark-brown;
+    background-color: $color-white;
+    color: $color-secondary;
     padding: 25px;
 }
 .bg-quote{
     height: 500px;
-    background: url(../img/bg-quote.png) $dark-brown no-repeat top left;
+    background: url(../img/bg-quote.png) $color-secondary no-repeat top left;
     background-size: cover;
     & h1{
         font-size: 12px;
         font-family: "Lato";
-        color: $white;
+        color: $color-white;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 2.6;
         }
     & .line{
-        background-color: $white;
+        background-color: $color-white;
         width: 22px;
         height: 1px;
         margin: 0 auto;
@@ -42,7 +42,7 @@
     & h2{
         font-size: 21px;
         font-family: "Aileron";
-        color: $white;
+        color: $color-white;
         font-weight: bold;
         line-height: 1.524;
         text-align: center;
@@ -64,14 +64,14 @@ section.bg-brown{
 }
 
 .bg-green{
-    background: url(../img/bg-pattern-repeat.png) $green repeat top left;
-    color: $white;
+    background: url(../img/bg-pattern-repeat.png) $success repeat top left;
+    color: $color-white;
     padding: 25px;
 }
 
 .dog-lifestyle{
-  background: url(../img/dog-lifestyle.png) $dark-brown no-repeat top left;
-  color: $white;
+  background: url(../img/dog-lifestyle.png) $color-secondary no-repeat top left;
+  color: $color-white;
   padding: 100px 150px;
   background-size: 50%;
 }

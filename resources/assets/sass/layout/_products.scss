@@ -1,24 +1,25 @@
 .products{
-  background: url(../img/bg-pattern-repeat.png) $light-grey repeat top left;
-  padding: 25px;
+    background: url('../img/bg-pattern-repeat.png') $light-grey repeat top left;
 }
 
 figure{
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  .box{
-  box-shadow: 0 0 10px #ccc;
-  }
-  img{
-    min-height: 200px;
-  }
-  figcaption{
-    background: $white;
-    text-align: center;
-    padding: 15px 0;
-    text-transform: uppercase;
-  }
-  &:hover{
-    transform: scale(1.1);
-  }
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    cursor: pointer;
+    .box{
+        box-shadow: 0 0 10px #ccc;
+    }
+    img{
+        min-height: 200px;
+        display: block
+    }
+    figcaption{
+        background: $color-white;
+        text-align: center;
+        padding: 15px 0;
+        text-transform: uppercase;
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
 }
